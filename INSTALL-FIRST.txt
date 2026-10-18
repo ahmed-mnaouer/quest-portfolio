@@ -1,0 +1,47 @@
+AHMED'S QUEST — PROJECT LOG UPDATE
+
+This is a source-code update, not a complete standalone app.
+No new npm packages are required. Existing Village, RoomModal, CvActions,
+site/world/documents config, index.css, PNG files, and village.json remain in place.
+
+1. Back up your existing src folder outside the project.
+2. Copy this archive's src folder into your quest-portfolio project.
+   Merge folders and replace the matching files. Do not replace your whole project.
+3. Run npm run dev and test locally.
+4. Run npm run build before deployment. This package has not been browser-tested
+   or TypeScript-built in your environment.
+
+FILES INCLUDED
+src/App.tsx
+src/App.css
+src/config/projects.ts
+src/components/PortfolioView.tsx
+src/components/PortfolioView.css
+src/components/ProjectLog.tsx
+src/components/ProjectLog.css
+
+CHECKS
+- Title screen avatar loads from /avatar/ahmed.png.
+- View portfolio opens the redesigned professional page.
+- Project category filters change visible cards.
+- Read case study expands with keyboard or mouse.
+- LinkedIn, GitHub, and project-source links work.
+- Existing CV ready setting and PDF path remain unchanged.
+- Play village still loads your map, walking, and doors.
+- Enter on a focused title-screen button activates that button, not a global game shortcut.
+- Direct links: ?view=portfolio and ?view=village.
+- Browser Back / Forward changes view. Section links may create extra same-view history entries.
+- On narrow screens, project cards stack instead of overflowing.
+- Reduced-motion preference removes the new decorative animation.
+
+CONTENT / LIMITS
+The three projects are initial editorial selections, not a completed repository audit.
+Conversational AI wording comes from the user's description; responsibilities need review.
+Loan Approval details are limited to the user's public LinkedIn project post.
+Ahmed's Quest details come from the supplied code and reported functionality.
+Workflow previews are original schematic illustrations, NOT product screenshots.
+No model scores, employment achievements, or business-impact metrics were invented.
+No live analytics dashboard or live chatbot is included in this update.
+The War Room remains unchanged; ProjectLog is reusable for a later room integration.
+Do not use the draft text as a final application-ready portfolio without review.
+The app's existing asset-credit obligations remain unchanged.

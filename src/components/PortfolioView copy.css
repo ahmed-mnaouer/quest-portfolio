@@ -1,0 +1,173 @@
+.portfolio-view {
+  --gold: #e0b252;
+  --cyan: #e0b252;
+  --panel: #1a1d23;
+  --text: #ecebe6;
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  padding: 6rem 1.5rem 2.5rem;
+  color: var(--text);
+  font-family: var(--font-reading, system-ui, sans-serif);
+  font-size: 1.05rem;
+}
+
+body:has(.portfolio-view) {
+  background: #14161a;
+}
+
+.portfolio-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  font: 1.2rem var(--font-game, monospace);
+}
+
+.portfolio-view a { color: var(--gold); text-underline-offset: 5px; }
+.portfolio-view a:hover { color: #f3d58f; }
+
+.portfolio-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(240px, .75fr);
+  align-items: center;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  margin-bottom: 4rem;
+}
+
+.portfolio-label {
+  margin: 0 0 .6rem;
+  color: #a9a79f;
+  font: 1.05rem var(--font-game, monospace);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.portfolio-intro h1 {
+  margin: 0;
+  font: 600 clamp(2.7rem, 6vw, 4.5rem)/1.1 var(--font-game, monospace);
+}
+
+.portfolio-role {
+  max-width: 34ch;
+  margin: 1.2rem 0;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.portfolio-summary {
+  max-width: 62ch;
+  color: #c9c7bf;
+  font-size: 1.1rem;
+  line-height: 1.75;
+}
+
+.portfolio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.7rem;
+}
+
+.portfolio-actions > a { font: 1.15rem var(--font-game, monospace); }
+
+.portfolio-actions .portfolio-primary {
+  display: inline-flex;
+  min-height: 46px;
+  align-items: center;
+  padding: .7rem 1.1rem;
+  border: 1px solid var(--gold);
+  border-radius: 4px;
+  background: var(--gold);
+  color: #14161a;
+  text-decoration: none;
+}
+
+.portfolio-actions .portfolio-primary:hover { color: #14161a; background: #f3d58f; }
+
+.character-panel {
+  padding: 1.25rem;
+  border: 1px solid #33363f;
+  border-radius: 4px;
+  text-align: center;
+  background: #1a1d23;
+}
+
+.character-stage::before { content: none; }
+.portfolio-portrait { display: block; width: 100%; height: 280px; object-fit: contain; }
+
+.village-entry {
+  min-height: 44px;
+  padding: .6rem 1rem;
+  color: var(--gold);
+  background: transparent;
+  border: 1px solid #6b5c36;
+  border-radius: 4px;
+  cursor: pointer;
+  font: 1.15rem var(--font-game, monospace);
+}
+
+.village-entry:hover { background: #24272e; }
+.character-note { color: #a9a79f; font-size: .85rem; line-height: 1.6; }
+
+.portfolio-section, .portfolio-panel { scroll-margin-top: 7rem; }
+.portfolio-section { margin-bottom: 3.5rem; }
+
+.portfolio-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.portfolio-section-heading h2, .portfolio-panel h2 {
+  margin: 0;
+  font: 500 clamp(1.9rem, 4vw, 2.5rem)/1.15 var(--font-game, monospace);
+}
+
+.portfolio-section-heading > a { font: 1.15rem var(--font-game, monospace); }
+.section-intro { max-width: 70ch; margin: 1rem 0 1.5rem; color: #c9c7bf; font-size: 1.05rem; line-height: 1.75; }
+
+.portfolio-panel {
+  margin-top: 1.5rem;
+  padding: clamp(1.25rem, 4vw, 2rem);
+  border: 1px solid #33363f;
+  border-radius: 4px;
+  background: #1a1d23;
+}
+
+.portfolio-panel p:not(.portfolio-label) { color: #c9c7bf; line-height: 1.8; font-size: 1.05rem; }
+.about-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+.contact-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.contact-link { font: 1.25rem var(--font-game, monospace); }
+
+.portfolio-footer {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #33363f;
+  font-size: .9rem;
+  color: #a9a79f;
+}
+
+.portfolio-view :is(a, button, summary):focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .portfolio-view { padding-top: 7.5rem; }
+  .portfolio-intro { grid-template-columns: 1fr; margin-bottom: 2.5rem; }
+  .character-panel { width: min(100%, 340px); justify-self: center; }
+  .portfolio-portrait { height: 240px; }
+  .about-columns { grid-template-columns: 1fr; gap: 0; }
+}

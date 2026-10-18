@@ -1,0 +1,61 @@
+.asset-credits {
+  width: min(100%, 1100px);
+  margin: 1.5rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid #34446d;
+  color: #b7c5df;
+  text-align: left;
+}
+
+.asset-credits > summary {
+  width: fit-content;
+  min-height: 44px;
+  padding: 0.4rem 0;
+  color: var(--gold, #f5c451);
+  font: 1.1rem/1.5 var(--font-game, monospace);
+  cursor: pointer;
+}
+
+.asset-credits-content {
+  max-width: 85ch;
+  padding-bottom: 0.5rem;
+  font: 0.85rem/1.8 var(--font-reading, system-ui, sans-serif);
+}
+
+.asset-credits-content > p {
+  margin: 0.7rem 0;
+}
+
+.asset-credits-content ul {
+  margin: 1rem 0;
+  padding-left: 1.2rem;
+}
+
+.asset-credits-content li + li {
+  margin-top: 0.85rem;
+}
+
+.asset-credits-content strong {
+  color: #dce4f3;
+  font-weight: 600;
+}
+
+.asset-credits-content a {
+  color: var(--gold, #f5c451);
+  font: inherit;
+  text-underline-offset: 4px;
+  overflow-wrap: anywhere;
+}
+
+.asset-credits-content a:hover {
+  color: #ffe5a3;
+}
+
+.asset-credits-note {
+  color: #a6b7d2;
+}
+
+.asset-credits :is(summary, a):focus-visible {
+  outline: 2px solid var(--cyan, #4fd1c5);
+  outline-offset: 4px;
+}

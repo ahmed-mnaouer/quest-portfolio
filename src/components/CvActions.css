@@ -1,0 +1,33 @@
+.cv-actions {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.cv-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0.55rem 0.9rem;
+  border: 1px solid #59678f;
+  background: #151b3a;
+  color: var(--text);
+  font-family: var(--font-game);
+  font-size: 1.15rem;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+.cv-action:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.cv-action[href]:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  background: #202a4e;
+}

@@ -1,0 +1,156 @@
+.profile-section {
+  margin-top: 3.5rem;
+}
+
+.profile-section > h2 {
+  margin: 0;
+  font: 500 clamp(1.9rem, 4vw, 2.5rem)/1.2
+    var(--font-game, monospace);
+}
+
+.profile-timeline {
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience-entry {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(170px, 0.6fr) minmax(0, 1.8fr);
+  gap: 1.5rem;
+  margin-left: 0.4rem;
+  padding: 0 0 2rem 1.5rem;
+  border-left: 1px solid #445477;
+}
+
+.experience-entry::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
+  background: var(--gold, #f5c451);
+  box-shadow: 0 0 12px #f5c45125;
+}
+
+.experience-entry:last-child {
+  padding-bottom: 0;
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: #aebed9;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.profile-period {
+  margin: 0 0 0.65rem;
+  color: var(--cyan, #4fd1c5);
+  font: 1.05rem/1.4 var(--font-game, monospace);
+}
+
+.experience-content h3,
+.profile-card h3 {
+  margin: 0;
+  color: #eef2fc;
+  font: 500 1.55rem/1.25 var(--font-game, monospace);
+}
+
+.profile-organisation {
+  margin: 0.5rem 0 0.8rem;
+  color: #f2d38f;
+  font-size: 0.95rem;
+}
+
+.experience-content > p:not(.profile-organisation) {
+  margin: 0.6rem 0;
+  color: #c4cee2;
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.profile-bullets {
+  margin: 0.8rem 0 0;
+  padding-left: 1.15rem;
+  color: #becbe2;
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.profile-bullets li + li {
+  margin-top: 0.55rem;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.profile-card {
+  min-width: 0;
+  padding: 1.5rem;
+  border: 1px solid #34446d;
+  border-radius: 8px;
+  background: linear-gradient(145deg, #16213c, #10192f);
+}
+
+.honours-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.honour-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 1.1rem;
+  border: 1px solid #4d4d50;
+  border-radius: 7px;
+  background: linear-gradient(120deg, #f5c4510b, #111a33);
+}
+
+.honour-emblem {
+  color: var(--gold, #f5c451);
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.honour-card h3 {
+  margin: 0;
+  color: #f1e2bc;
+  font: 500 1.2rem/1.4 var(--font-game, monospace);
+}
+
+.honour-card p {
+  margin: 0.45rem 0 0;
+  color: #bcc9df;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .experience-entry {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .education-grid,
+  .honours-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-section {
+    margin-top: 2.5rem;
+  }
+}
