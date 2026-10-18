@@ -206,7 +206,7 @@ export default function Street({ paused, visited, collected, onEnterRoom, onColl
           <div className="player-flip" style={{ transform: `scaleX(${facing})` }}>
             <img
               className={`player-img${walking ? ' walking' : ''}`}
-              src="/avatar/ahmed.png"
+              src={`${import.meta.env.BASE_URL}avatar/ahmed.png`}
               alt="Ahmed"
               draggable={false}
             />

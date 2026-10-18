@@ -102,7 +102,7 @@ export default function App() {
         <div className="avatar-wrap">
           <img
             className="hero-art"
-            src="/avatar/ahmed.png"
+            src={`${import.meta.env.BASE_URL}avatar/ahmed.png`}
             alt="Pixel art of Ahmed, a Data Mage in an orange hoodie holding a glowing laptop"
           />
         </div>

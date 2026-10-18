@@ -38,7 +38,7 @@ export default function PortfolioView({ onPlay }: Props) {
         </div>
         <aside className="character-panel" aria-label="Portfolio character">
           <p className="portfolio-label">AHMED / DATA MAGE</p>
-          <div className="character-stage"><img className="portfolio-portrait" src="/avatar/ahmed.png" alt="Ahmed’s orange-hoodie RPG avatar holding a laptop" width="240" height="300" /></div>
+          <div className="character-stage"><img className="portfolio-portrait" src={`${import.meta.env.BASE_URL}avatar/ahmed.png`} alt="Ahmed’s orange-hoodie RPG avatar holding a laptop" width="240" height="300" /></div>
           <button className="village-entry" type="button" onClick={onPlay}>Enter the village →</button>
           <p className="character-note">An optional playable version of my portfolio.</p>
         </aside>
